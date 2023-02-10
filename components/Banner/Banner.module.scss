@@ -1,0 +1,43 @@
+.Banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fbede9;
+  border-radius: 12px;
+  width: 90%;
+  margin: 2em auto;
+  padding: 7em 5em;
+  background-image: url("/top-left-corner.svg"), url("/bottom-right-corner.svg");
+  background-position: 0% 0%, 100% 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 40em, 35em;
+
+  &Content {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+
+    &:nth-of-type(1) {
+      img {
+        border-radius: 50%;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+
+    &User {
+      &Review {
+        margin-top: 1.25em;
+        display: flex;
+        align-items: center;
+        gap: 2em;
+
+        div {
+          display: flex;
+          align-items: center;
+          gap: 0.5em;
+        }
+      }
+    }
+  }
+}

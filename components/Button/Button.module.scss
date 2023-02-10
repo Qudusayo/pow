@@ -1,0 +1,18 @@
+.Button,
+.ButtonFull {
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  padding: 1em;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6613e7;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.ButtonFull {
+  width: 100%;
+}

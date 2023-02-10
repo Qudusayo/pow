@@ -1,0 +1,35 @@
+.StatCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  margin-bottom: 4em;
+
+  &Sector {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    position: relative;
+    // border: 1px solid red;
+
+    h2 {
+      font-size: 0.95em;
+    }
+
+    img {
+      z-index: 1;
+    }
+
+    &::after {
+      background-color: #23211b;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      z-index: 0;
+      content: "";
+      position: absolute;
+      top: 1.25em;
+      left: 1.25em;
+    }
+  }
+}
